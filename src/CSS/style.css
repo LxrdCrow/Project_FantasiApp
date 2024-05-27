@@ -1,0 +1,210 @@
+/* Homepage design setup */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/libreria.webp");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #6b006d;
+}
+
+
+
+html, body {
+  height: 100%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: gold;
+  text-align: center;
+  margin: 50px 0;
+  font-size: 60px;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.structural {
+  margin: 35px 0;
+  color: gold;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#category {
+  margin: 10px 0;
+  padding: 10px;
+  padding-left: 1rem;
+  border-radius: 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px; 
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#loader {
+  position: fixed; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  display: none;
+  font-size: 24px;
+  color: #480C85; 
+  background-color: gold;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+/* Style for each book element */
+
+.book {
+  background-color: #bcdefd; 
+  padding: 20px; 
+  margin-top: 4rem; 
+  margin-bottom: 4rem; 
+  margin-left: 4rem; 
+  margin-right: 4rem;
+  border-radius: 5px; 
+  box-shadow: 10px 10px 10px 0 rgba(87, 17, 158, 1); 
+}
+
+.book h2 {
+  color: #480C85; 
+  font-size: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.book img {
+  max-height: 100%; 
+  max-width: 30%; 
+  margin-right: 20px; 
+  margin-top: 10px;
+}
+
+.book p.author {
+  color: #666; 
+  font-size: 16px; 
+}
+
+.extra-space {
+  height: 20px; 
+}
+
+.book .description {
+  color: #333;
+  font-size: 15px;
+  padding: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  max-height: 300px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* Responsive design */
+
+
+@media only screen and (max-width: 480px) {
+  .book {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .book-title {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .author {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 1.2em;
+    padding: 1em;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 90%;
+  }
+
+  #loader {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0;
+  }
+
+  #searchBtn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #category {
+    width: 100%;
+    text-align: center;
+  }
+
+  .extra-space {
+    height: 50px;
+  }
+}
