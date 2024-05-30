@@ -26,7 +26,6 @@ async function fetchBooks() {
     
     if (category.toLowerCase() !== 'fantasy') {
         const resultsContainer = document.getElementById('results');
-        resultsContainer.innerHTML = `<p>La categoria "${category}" non è supportata</p>`;
         return;
     }
 
