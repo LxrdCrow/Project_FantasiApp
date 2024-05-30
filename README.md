@@ -37,7 +37,7 @@ Progetto di JavaScript Advanced per applicazione web lato client per la ricerca 
 | Primary Color     | ![#480C85](https://via.placeholder.com/10/480C85?text=+) `#480C85` |
 | Accent Color      | ![#bcdefd](https://via.placeholder.com/10/bcdefd?text=+) `#bcdefd` |
 | Text Color        | ![#333333](https://via.placeholder.com/10/333333?text=+) `#333333` |
-| Title Color       | ![#FFD700](https://via.placeholder.com/10/FFD700?text=+) `gold` |
+| Title Color       | ![#FFD700](https://via.placeholder.com/10/FFD700?text=+) `#FFD700` |
 
 ## 🧰 Getting Started
 
