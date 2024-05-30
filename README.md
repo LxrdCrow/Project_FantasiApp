@@ -2,8 +2,6 @@
 Progetto di JavaScript Advanced per applicazione web lato client per la ricerca di libri 
 
 
-View Demo · Documentation · Report Bug · Request Feature
-
 📔 Table of Contents
 About the Project
 Acknowledgements
@@ -33,8 +31,6 @@ npm run start
 🏃 Run Locally
 Clone the project
 
-https://github.com/EliaGiolli/Project_Search4YourBook
-Go to the project directory
 
 cd progetto_js_advanced
 Install dependencies
