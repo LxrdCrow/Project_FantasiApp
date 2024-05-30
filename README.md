@@ -63,6 +63,8 @@ Questo progetto utilizza Webpack come bundler.
  ```bash
    npm install 
 
+```
+
 
 
 ## 💎 Acknowledgements
