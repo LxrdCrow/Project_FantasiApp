@@ -24,7 +24,7 @@ async function fetchBooks() {
     const category = document.getElementById('category').value;
     
     
-    if (category.toLowerCase() !== 'fantasy') {
+    if (category.toLowerCase() ) {
         const resultsContainer = document.getElementById('results');
         return;
     }
