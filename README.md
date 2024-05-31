@@ -22,6 +22,8 @@ Progetto di JavaScript Advanced per applicazione web lato client per la ricerca 
 
 **FantasiApp** è una web application client-side progettata per aiutarti a cercare e trovare i tuoi libri preferiti insieme alle principali informazioni. Questo progetto utilizza librerie JavaScript moderne e strumenti per fornire un'esperienza utente senza interruzioni.
 
+View in Netlify: https://fantasiapp.netlify.app/
+
 ### 🎯 Features
 
 - **Integrazione con l'API Open Library**: Recupera i dati dei libri dall'API Open Library.
