@@ -61,15 +61,16 @@ Questo progetto utilizza Webpack come bundler.
    
 2. Install dependencies
 
- ```bash
+   ```bash
    npm install
- ```
+   ```
 
 3. Open website
 
     ```bash
    npm run start
- ```
+    
+ 
 
 
 
