@@ -69,9 +69,6 @@ Questo progetto utilizza Webpack come bundler.
 
     ```bash
    npm run start
-    
- 
-
 
 
 ## 💎 Acknowledgements
