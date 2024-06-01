@@ -58,14 +58,18 @@ Questo progetto utilizza Webpack come bundler.
 
    ```bash
    npm install webpack webpack-cli --save-dev
-
-
+   
 2. Install dependencies
 
  ```bash
-   npm install 
+   npm install
+ ```
 
-```
+3. Open website
+
+    ```bash
+   npm run start
+ ```
 
 
 
