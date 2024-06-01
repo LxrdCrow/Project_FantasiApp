@@ -63,13 +63,14 @@ Questo progetto utilizza Webpack come bundler.
 
    ```bash
    npm install
-   ```
+   
 
 3. Open website
 
     ```bash
    npm run start
-
+   ```
+    
 
 ## 💎 Acknowledgements
 
