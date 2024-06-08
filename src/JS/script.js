@@ -5,7 +5,17 @@ import '/src/CSS/style.css';
 
 document.addEventListener('DOMContentLoaded', function() {
     const buttonClick = document.getElementById('searchBtn');
+    const categoryInput = document.getElementById('category');
+    
     buttonClick.addEventListener('click', fetchBooks);
+    
+    
+    // event listener for "Enter"
+    categoryInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            fetchBooks();
+        }
+    });
 });
 
 // Loader creation
@@ -21,7 +31,16 @@ function hideLoader() {
 
 // WEB API for Open Library
 async function fetchBooks() {
-    const category = document.getElementById('category').value;
+    const categoryInput = document.getElementById('category');
+    const category = categoryInput.value.trim(); 
+
+    if (!category) {
+        // error message for no input
+        const resultsContainer = document.getElementById('results');
+        resultsContainer.innerHTML = `<p class="error-message">Please enter a search category</p>`;
+        return;
+    }
+
     const url = `https://openlibrary.org/subjects/${category}.json`;
     
     showLoader(); // Loader starts
@@ -29,10 +48,18 @@ async function fetchBooks() {
     try {
         const response = await axios.get(url);
         const books = _.get(response, 'data.works', []);
-        displayBooks(books);
+
+        if (books.length === 0) {
+            // error message for no results
+            const resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = `<p class="error-message">No results found for "${category}"</p>`;
+        } else {
+            displayBooks(books);
+        }
     } catch (error) {
         console.error("Error fetching books:", error);
         const resultsContainer = document.getElementById('results');
+        resultsContainer.innerHTML = `<p class="error-message">Error fetching data. Please try again later.</p>`;
     } finally {
         hideLoader(); // Loader ends
     }
@@ -94,6 +121,7 @@ async function fetchBookDescription(bookKey) {
         console.error("Error fetching book description:", error);
     }
 }
+
 
 
       
